@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+footer {
+    font-family: 'Quicksand', 'Arial', 'Helvetica', sans-serif;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #006c67;;
+    width: 100%;
+}
+
+.social {
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    color: #006c67;
+    margin: 5px;
+    border:1px solid white;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    line-height:40px;
+}
+
+.icone-social {
+    font-size: 15px;
+}
+
+#botao_whatsapp {
+    font-size:25px;
+}
+
+#icone-facebook:hover {
+    border:0px solid white;
+    padding:11px;
+    color:white;
+    background-color: rgb(45, 45, 164);
+}
+
+#icone-instagram:hover {
+    border:0px solid white;
+    padding:11px;
+    color:white;
+    background-image: linear-gradient(to right, #625BCB, #D62D78, #FB9C36);
+}

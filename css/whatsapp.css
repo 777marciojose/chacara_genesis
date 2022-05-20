@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --verde-logo: green;
+    --texto_logo:white;
+}
+
+#container_whatsapp {
+    background-color:var(--texto_logo);
+    display: block;
+    width:94%;
+    max-width:600px;
+    margin:10px;
+    border:2px solid var(--verde-logo);
+    border-radius: 15px;
+    box-shadow:0px 0px 10px #656161;
+    margin:0 auto;
+    margin-bottom:25px;
+}
+
+
+
+#container_logo_whatsapp {
+    position: relative;
+    text-align: center;
+    width:100%;
+    background-color: var(--verde-logo);
+    color:white;
+    font-size:32px;
+    font-family:'sans-serif';
+    display:inline-block;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#container_txt_whatsapp {
+    position: relative;
+    text-align: center;
+    display:inline-block;
+    font-size:32px;
+    font-family: sans-serif;
+}
+
+#numero_chacara_genesis {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    margin-top: 94px;
+    justify-content:center ;
+    position: relative;
+    font-size: 230%;
+    color: var(--verde-logo);
+    text-align: right;
+    margin-right:25px;
+    display: inline-block;
+    float: right;
+}
+
+#qrcode_contato_genesis {
+    position:relative;
+    margin-left: 5px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+#container_content_whatsapp {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#icone_whatsapp {
+    font-size:35px;
+    --ionicon-stroke-width : 16px ; 
+}
+@media (max-width: 668px){
+
+
+    #container_content_whatsapp {
+        display: none;
+    }
+
+    #container_whatsapp {
+        background-color: var(--verde-logo);
+        padding:10px;
+        border-radius: 55px;
+    }
+
+    #container_logo_whatsapp {
+        
+    border-radius: 55px;
+    border: 1px solid var(--verde-logo);
+    }
+}

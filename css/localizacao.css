@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+      #main {
+        display: block;
+        max-width: 1029px;
+        margin: 40px auto;
+      }
+      .container {
+        text-align: center;
+        display: inline-block;
+        background-color: rgb(123, 209, 216);
+        width: 300px;
+        height: 450px;
+        margin: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px #474747;
+        position: relative;
+      }
+
+       .container_image {
+         width:100%;
+         height:99%;
+         display: block;
+         border-radius: 15px;
+         background-size: cover;
+         background-position: center center;
+       }
+
+       #container_image_1 {
+        background-image:url("https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg");
+       }
+
+       #container_image_2 {
+        background-image:url("https://img.freepik.com/fotos-gratis/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpg?w=2000");
+       }
+
+       #container_image_3 {
+        background-image:url("https://i1.wp.com/www.guiaestudo.com.br/wp-content/uploads/2019/04/parque-nacional-do-pantanal-matogrossense-paisagem-natural.jpg");
+       }
+
+
+       .container_content p {
+         height:50px
+       }
+
+       .container_content h2 {
+        position: relative;
+        color: white;
+        margin-bottom: -48px;
+        background-color: rgba(0, 0, 0, 0.65);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 10px;
+        font-family: 'Fredoka';
+        font-weight: 400;
+    }
+
+       .container_button {
+        font-family: 'Fredoka';
+        font-weight: 500;
+        display: inline-block;
+        margin: 0px;
+        width: 51%;
+        padding: 10px;
+        border: 0px solid white;
+        border-radius: 0px;
+        color: rgb(42, 98, 104);
+        margin-top: 0px;
+        position: absolute;
+        bottom: 0;
+       }
+
+      .container_button img {
+        width:14px;
+        height: 14px;
+        align-content: center;
+        margin-top: 10px;
+      }
+       
+       .div_buttons {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+        
+       }
+
+       #button_maps {
+        background-color: #292b42;
+        color: white;
+        border-bottom-left-radius: 15px;
+        float: left;
+        left: 0;
+    }
+    
+
+       #button_waze {
+        background-color: #292b42;
+        color: white;
+        border-bottom-right-radius: 15px;
+        float: right;
+        right: 0;
+       }
+
+       #button_maps:hover{
+          background-color: rgb(228, 62, 62);
+          color:white;
+       }
+
+       #button_waze:hover{
+        animation-duration: 4s;
+          background-color: rgb(96, 208, 233);
+          color:white;
+       }
+       
+       .container_content h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 200;
+    margin-top: -360px;
+    margin-bottom: 322px;
+    color: white;
+    text-shadow: 1 1 black;
+    background-color: #302d2d;
+    opacity: 0.75;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+       
+       }
+    #titulo_card {
+      position: relative;
+    color: white;
+    margin-bottom: -48px;
+    background-color: rgba(0, 0, 0, 0.65);
+    /* z-index: 1; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-family: 'Fredoka';
+    font-weight: 400;
+}
+      @media (max-width: 1200px) {
+       
+        .container {
+          display: block;
+          width:80%;
+          max-width: 650px;
+          margin:25px auto;
+        }
+        .container_image {
+          width:100%;
+        }
+      }

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+ body {
+    background-image: url('../imagens/por_do_sol_desfocado.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+    #main {
+      width:90%;
+      display: block;
+      margin:0 auto;
+    }
+    .container, .container_imagem, .container_content {
+      display:inline-block;
+    }
+
+    .container {
+      width: 100%;
+      height: 70vh;
+      margin:0px auto;
+      margin-bottom:25px;
+      margin-top:43px;
+      max-width: 900px;
+      position: relative;
+      display: block;     
+      box-shadow: 2px 1px 10px #363636;
+
+    }
+    .container_imagem {
+      position: relative;
+      width: 70%;
+      height: 100%;
+      background-size:cover;
+      background-position: center center;
+    }
+
+    #container_imagem_1 {
+      background-image: url("https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg");
+    }
+
+    #container_imagem_2 {
+      background-image: url("https://i.pinimg.com/originals/78/b1/02/78b102f5d4ff7809bfb9b515abb239ae.jpg")
+    }
+
+    #container_imagem_3 {
+      background-image: url("https://culturainglesamg.com.br/app/uploads/2021/04/4-750x460.png")
+    }
+    .container_content {
+      position:absolute;
+      width: 30%;
+      height: 70vh;
+      background-color: white;;
+      color:black;
+      /*
+      background-color:#1D51A4;
+      color:white;
+      */
+    }
+    .container_content h2 {
+      font-family: 'Fredoka';
+      font-weight: 200;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .container_content p {
+      font-family: 'Quicksand', 'Arial', sans-serif;
+      margin: 15px;
+      margin-top: 50px;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 24px;
+    }
+
+    .botao_saiba_mais {
+      background-color:rgb(122, 213, 243);
+      color: #000000;
+      display: block; 
+      padding: 5px;
+      border:1px solid white;
+      width:70%;
+      margin:0 auto;
+      border-radius: 2px;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size:18px; 
+      position: absolute;
+      bottom:25px;
+      left:50%;
+      margin-left: -35%;
+
+    }
+
+    .botao_saiba_mais:hover{
+      box-shadow:0px 0px 10px #c2c2c2;
+    }
+
+
+    
+    
+    #chamar_agora {
+      margin:0 auto;
+      font-size: 25px;
+      padding: 25px;
+      background-color:green;
+      color: white;
+      border-radius: 45px;
+      display: block;
+      margin-bottom: 26px;
+      padding: 20px 100px;
+    }
+
+    .container_content ul li {
+      margin:25px
+    }
+
+    .container_content ul li i {
+      padding-right: 25px;
+    }
+
+    /*
+    #main > *:not(.nofilter) {
+      filter: blur(5px) brightness(0.5);
+    }
+    */
+
+    @media (max-width:820px) {
+        .container {
+            display: block;
+            height: 651px;
+        }
+
+        .container_imagem {
+            display: block;
+            height: 50%;
+            width: 100%;
+        }
+
+        .container_content {
+            position: relative;
+            display: block;
+            width: 100%;
+            margin-top: -25px;
+            height: 50%;
+        }
+
+        .container_content h2 {
+            display: block;
+            padding-top: 20px;
+        }
+
+        .container_content p {
+            display: block;
+        }
+
+        .botao_saiba_mais {
+            display: block;
+        }
+     
+    }
+
+    @media (max-width:415px) {
+      .container_image {
+        display: absolute;
+          margin-top:160px;
+      }
+      
+      .container_content {
+        display:absolute;
+      }
+  }
