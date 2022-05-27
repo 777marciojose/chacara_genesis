@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
  body {
-    background-image: url('../imagens/por_do_sol_desfocado.png');
+    /*background-image: url('../imagens/por_do_sol_desfocado.png');*/
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -162,6 +162,9 @@
     }
 
     @media (max-width:415px) {
+
+
+
       .container_image {
         display: absolute;
           margin-top:160px;
@@ -170,4 +173,28 @@
       .container_content {
         display:absolute;
       }
+  }
+  #img_background {
+    background-image: url('https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg');
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    /*filter: blur(1px) brightness(0.7);*/
+  }
+
+  #img_filter {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC');
+    display: block;
+    position: fixed;
+    opacity: 0.35;
+    width: 100%;
+    height:1861px;
+  }
+
+  #container_whatsapp {
+    display:block;
+    position: relative;
   }
