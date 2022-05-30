@@ -100,69 +100,84 @@ img {
 </style>
 <body>
 
+<header class="nofilter">
+  <nav>
+    <input type="checkbox" name="" id="check">
+    <label for="check" class="checkbtn"> <i class="fa fa-bars"></i>
+    </label>
+    <img id="logo" src="imagens/logotipo_chacaca_gênesis.png" alt=""> 
+    <label class="logotipo">CHACARA GÊNESIS</label>
+    <ul>
+      <li><button onclick="window.location.href = 'index.html'" type="button"><ion-icon name="home-outline"></ion-icon>  INICIO</button></li>
+      <li><button onclick="window.location.href = 'localizacao.html'" type="button"><ion-icon name="navigate-outline"></ion-icon>  LOCALIZAÇÃO</button></li>
+      <li><button onclick="window.location.href = 'quem_somos.html'" type="button"><ion-icon name="people-outline"></ion-icon>  QUEM SOMOS</button></li>
+      <li id="contate-agora"><button><ion-icon name="logo-whatsapp"></ion-icon> CONTATE AGORA</button></li>
+    </ul>
+  </nav>
+</header>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" style="width:100%">
-  </div>
+<h2 style="text-align:center">Chacara Gênesis</h2>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_5terre_wide.jpg" style="width:100%">
+<div class="row">
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
-  </div>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+    </div>
     
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-  </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+    </div>
     
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
+
   </div>
 </div>
 
 <script>
-let slideIndex = 1;
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -174,25 +189,34 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+      dots[i].className = dots[i].className.replace(" active", "");
+  } 
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-  
 
+<footer class="nofilter">
 
+  <div>
+      <button id="icone-instagram"class="social"><ion-icon class='icone-social' name="logo-instagram"></ion-icon> Instagram</button>
+      <button id="icone-facebook" class="social" ><ion-icon class='icone-social' name="logo-facebook"></ion-icon> Facebook</button>
+      
+  </div>
+
+  <p>Chácara Gênesis - Criado por Potencial Bullets &#169; </p>
+  <p> <a href="termos_services.html"> Termos de Serviço e Politicas de Privacidade</a></p>
+</footer>
 </body>
 </html>
